@@ -1,6 +1,7 @@
 package p1
 
 import (
+	"math"
 	"testing"
 )
 
@@ -32,5 +33,9 @@ func TestMean(t *testing.T) {
 }
 
 func TestSqrt(t *testing.T) {
-
+	num := 598.1948
+	s := sqrt(num)
+	if s != math.Sqrt(num) {
+		t.Errorf("expected: %f; got: %f", math.Sqrt(num), s)
+	}
 }

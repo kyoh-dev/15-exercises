@@ -1,5 +1,7 @@
 package p1
 
+import "math"
+
 func sum(nums []int) int {
 	total := 0
 	for i := 0; i < len(nums); i++ {
@@ -9,11 +11,11 @@ func sum(nums []int) int {
 }
 
 func product(nums []int) int {
-	total := nums[0]
+	p := nums[0]
 	for i := 1; i < len(nums); i++ {
-		total *= nums[i]
+		p *= nums[i]
 	}
-	return total
+	return p
 }
 
 func mean(nums []int) int {
@@ -24,6 +26,6 @@ func mean(nums []int) int {
 	return total / len(nums)
 }
 
-func sqrt(nums []int) float64 {
-	return 0
+func sqrt(num float64) float64 {
+	return math.Sqrt(num)
 }
