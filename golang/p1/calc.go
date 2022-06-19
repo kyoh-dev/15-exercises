@@ -3,11 +3,11 @@ package p1
 import "math"
 
 func sum(nums []int) int {
-	total := 0
-	for i := 0; i < len(nums); i++ {
-		total += nums[i]
+	s := 0
+	for _, num := range nums {
+		s += num
 	}
-	return total
+	return s
 }
 
 func product(nums []int) int {
@@ -19,11 +19,11 @@ func product(nums []int) int {
 }
 
 func mean(nums []int) int {
-	total := 0
-	for i := 0; i < len(nums); i++ {
-		total += nums[i]
+	s := 0
+	for _, num := range nums {
+		s += num
 	}
-	return total / len(nums)
+	return s / len(nums)
 }
 
 func sqrt(num float64) float64 {
