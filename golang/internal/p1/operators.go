@@ -2,7 +2,7 @@ package p1
 
 import "math"
 
-func sum(nums []int) int {
+func Sum(nums []int) int {
 	s := 0
 	for _, num := range nums {
 		s += num

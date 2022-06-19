@@ -8,7 +8,7 @@ import (
 func TestSum(t *testing.T) {
 	nums := []int{4, 7, 28, 4917}
 	result := 4956
-	s := sum(nums)
+	s := Sum(nums)
 	if s != result {
 		t.Errorf("expected: %d; got: %d", result, s)
 	}
