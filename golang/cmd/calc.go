@@ -28,7 +28,7 @@ func main() {
 		if nums != nil {
 			n := p1.StrToIntSlice(&nums)
 			s := p1.Sum(n)
-			fmt.Printf("SUM: %d\n", s)
+			fmt.Printf("sum of %v: %d\n", n, s)
 		} else {
 			fmt.Println("ERR: expected a sequence of space-separated integers")
 			os.Exit(1)
@@ -42,7 +42,7 @@ func main() {
 		if nums != nil {
 			n := p1.StrToIntSlice(&nums)
 			p := p1.Product(n)
-			fmt.Printf("PRODUCT: %d\n", p)
+			fmt.Printf("product of %v: %d\n", n, p)
 		} else {
 			fmt.Println("ERR: expected a sequence of space-separated integers")
 			os.Exit(1)
@@ -56,7 +56,7 @@ func main() {
 		if nums != nil {
 			n := p1.StrToIntSlice(&nums)
 			m := p1.Mean(n)
-			fmt.Printf("MEAN: %d\n", m)
+			fmt.Printf("mean of %v: %d\n", n, m)
 		} else {
 			fmt.Println("ERR: expected a sequence of space-separated integers")
 			os.Exit(1)
@@ -72,7 +72,7 @@ func main() {
 			log.Fatal(err)
 		}
 		s := p1.Sqrt(float64(i))
-		fmt.Printf("SQUARE ROOT: %f\n", s)
+		fmt.Printf("sqrt of %d: %f\n", i, s)
 	default:
 		fmt.Println("ERR: expected a subcommand: [sum, product, mean, sqrt]")
 		os.Exit(1)
