@@ -10,15 +10,15 @@ func Sum(nums []int) int {
 	return s
 }
 
-func product(nums []int) int {
-	p := nums[0]
-	for i := 1; i < len(nums); i++ {
-		p *= nums[i]
+func Product(nums []int) int {
+	p := 1
+	for _, num := range nums {
+		p *= num
 	}
 	return p
 }
 
-func mean(nums []int) int {
+func Mean(nums []int) int {
 	s := 0
 	for _, num := range nums {
 		s += num
@@ -26,6 +26,6 @@ func mean(nums []int) int {
 	return s / len(nums)
 }
 
-func sqrt(num float64) float64 {
+func Sqrt(num float64) float64 {
 	return math.Sqrt(num)
 }

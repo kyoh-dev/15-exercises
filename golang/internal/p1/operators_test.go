@@ -17,7 +17,7 @@ func TestSum(t *testing.T) {
 func TestProduct(t *testing.T) {
 	nums := []int{597, 392, 38, 50183}
 	result := 446273002896
-	p := product(nums)
+	p := Product(nums)
 	if p != result {
 		t.Errorf("expected: %d; got: %d", result, p)
 	}
@@ -26,7 +26,7 @@ func TestProduct(t *testing.T) {
 func TestMean(t *testing.T) {
 	nums := []int{59, 3492, 57, 38, 10, 348}
 	result := 667
-	m := mean(nums)
+	m := Mean(nums)
 	if m != result {
 		t.Errorf("expected: %d; got: %d", result, m)
 	}
@@ -34,7 +34,7 @@ func TestMean(t *testing.T) {
 
 func TestSqrt(t *testing.T) {
 	num := 598.1948
-	s := sqrt(num)
+	s := Sqrt(num)
 	if s != math.Sqrt(num) {
 		t.Errorf("expected: %f; got: %f", math.Sqrt(num), s)
 	}
