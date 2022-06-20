@@ -3,10 +3,11 @@ package main
 import (
 	"flag"
 	"fmt"
-	"kyoh-dev/15-exercises/internal/p1"
 	"log"
 	"os"
 	"strconv"
+
+	"kyoh-dev/15-exercises/internal/p1"
 )
 
 func main() {

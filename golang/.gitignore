@@ -4,5 +4,5 @@
 *.so
 *.dylib
 *.test
-cmd/*
-!cmd/*.go
+cmd/calc/*
+!cmd/calc/*.go
